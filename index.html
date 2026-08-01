@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Ashar — Cyber Security Student</title>
+<meta name="description" content="Portfolio of Muhammad Ashar, Cyber Security student at SSUET. Projects in Java, Python, cloud deployment, and network security.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Background grid / scan overlay ===== -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="scanline" aria-hidden="true"></div>
+
+<!-- ===== Nav ===== -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__brand">
+    <span class="nav__prompt">root@ashar</span><span class="nav__tilde">:~$</span>
+  </a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav__links" id="navLinks">
+    <a href="#about"><span class="idx">01</span>about</a>
+    <a href="#skills"><span class="idx">02</span>skills</a>
+    <a href="#projects"><span class="idx">03</span>projects</a>
+    <a href="#experience"><span class="idx">04</span>experience</a>
+    <a href="#certifications"><span class="idx">05</span>certs</a>
+    <a href="#contact"><span class="idx">06</span>contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ===== Hero — terminal boot sequence ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <div class="terminal" role="img" aria-label="Terminal window introducing Muhammad Ashar">
+        <div class="terminal__bar">
+          <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+          <span class="terminal__title">ashar@ssuet: /home/portfolio</span>
+        </div>
+        <div class="terminal__body" id="terminalBody">
+          <!-- filled by JS typing effect -->
+        </div>
+      </div>
+
+      <div class="hero__side">
+        <p class="hero__eyebrow">// cyber security · ssuet · karachi</p>
+        <h1 class="hero__name">Muhammad<br>Ashar</h1>
+        <p class="hero__tagline">Securing systems, one packet at a time. BS Cyber Security student building real projects across cloud, code, and defense.</p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View projects</a>
+          <a href="assets/Muhammad_Ashar_Resume.pdf" class="btn btn--ghost" download>Download résumé</a>
+        </div>
+        <div class="hero__links">
+          <a href="https://github.com/mashar345" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/muhammad-ashar-b32191300" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:mashar7125@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll to about section">
+      <span></span>scroll
+    </a>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <div class="section__head">
+      <span class="section__cmd">$ cat about.txt</span>
+      <h2 class="section__title">About</h2>
+    </div>
+    <div class="about__grid">
+      <p class="about__text">
+        I'm a Cyber Security undergraduate at <strong>Sir Syed University of Engineering &amp; Technology</strong>,
+        with hands-on knowledge of network security, ethical hacking, and risk management. I work comfortably across
+        <strong>Java, Python, and HTML/CSS</strong>, and I've shipped real projects — from a cloud-deployed game on
+        Microsoft Azure to a Java-based Smart Home simulation built on core OOP principles.
+        Alongside development work, I hold certifications in Digital Marketing, E-Commerce, Social Media Marketing,
+        and UX/UI Design, and I currently tutor secondary-level students in Math, Physics, Chemistry, and Computer Science.
+      </p>
+      <ul class="about__facts">
+        <li><span>Location</span><strong>Karachi, Pakistan</strong></li>
+        <li><span>Degree</span><strong>BS Cyber Security, 2025–2028</strong></li>
+        <li><span>University</span><strong>SSUET</strong></li>
+        <li><span>Focus</span><strong>Network Security · Ethical Hacking</strong></li>
+        <li><span>Languages</span><strong>Urdu (Native) · English (Proficient)</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section class="section" id="skills">
+    <div class="section__head">
+      <span class="section__cmd">$ grep -r skills/</span>
+      <h2 class="section__title">Skills</h2>
+    </div>
+    <div class="skills__grid">
+      <div class="skill-card">
+        <h3><span class="skill-card__glyph">&lt;/&gt;</span>Programming</h3>
+        <div class="tags">
+          <span>Java</span><span>Python</span><span>HTML</span><span>CSS</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3><span class="skill-card__glyph">&#9737;</span>Cyber Security</h3>
+        <div class="tags">
+          <span>Network Security</span><span>Ethical Hacking</span><span>Risk Management</span><span>Threat Awareness</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3><span class="skill-card__glyph">&#9729;</span>Cloud &amp; Deployment</h3>
+        <div class="tags">
+          <span>Microsoft Azure App Services</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3><span class="skill-card__glyph">&#9670;</span>Design &amp; Office</h3>
+        <div class="tags">
+          <span>Figma (UX/UI)</span><span>MS Word</span><span>MS Excel</span><span>PowerPoint</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3><span class="skill-card__glyph">&#9993;</span>Digital Marketing</h3>
+        <div class="tags">
+          <span>Social Media Marketing</span><span>E-Commerce</span><span>Brand Promotion</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3><span class="skill-card__glyph">&#9737;</span>Soft Skills</h3>
+        <div class="tags">
+          <span>Teaching</span><span>Multitasking</span><span>Quick Learner</span><span>Team-Oriented</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section class="section" id="projects">
+    <div class="section__head">
+      <span class="section__cmd">$ ls -la projects/</span>
+      <h2 class="section__title">Projects</h2>
+    </div>
+    <div class="projects__grid">
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__tag">cloud</span>
+          <span class="project-card__status">deployed</span>
+        </div>
+        <h3>Tic-Tac-Toe — Azure Cloud Deployment</h3>
+        <p>A fully functional Tic-Tac-Toe web game with an interactive UI, deployed live to Microsoft Azure App Services (Southeast Asia region). Hands-on experience with cloud hosting, deployment pipelines, and managing a live web application.</p>
+        <div class="tags">
+          <span>HTML/CSS/JS</span><span>Azure App Services</span><span>Cloud Deployment</span>
+        </div>
+        <div class="project-card__links">
+          <a href="https://github.com/mashar345" target="_blank" rel="noopener">Repository →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__tag">java · oop</span>
+          <span class="project-card__status">complete</span>
+        </div>
+        <h3>Smart Home Device System</h3>
+        <p>A console-based Smart Home simulation built on core Java OOP principles — abstract classes, inheritance, and polymorphism — modeling devices including Fan, Light, AC, and Thermostat, each with power control, mode settings, and status reporting via overridden methods.</p>
+        <div class="tags">
+          <span>Java</span><span>OOP</span><span>Abstraction</span><span>Polymorphism</span>
+        </div>
+        <div class="project-card__links">
+          <a href="https://github.com/mashar345" target="_blank" rel="noopener">Repository →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__tag">python</span>
+          <span class="project-card__status">complete</span>
+        </div>
+        <h3>Python Library Management System</h3>
+        <p>A console-based system for managing library records — adding, searching, issuing, and returning books — applying functions, error handling, and file I/O to keep data persistent across sessions.</p>
+        <div class="tags">
+          <span>Python</span><span>File I/O</span><span>Error Handling</span>
+        </div>
+        <div class="project-card__links">
+          <a href="https://github.com/mashar345" target="_blank" rel="noopener">Repository →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__tag">excel</span>
+          <span class="project-card__status">complete</span>
+        </div>
+        <h3>Student Performance Dashboard</h3>
+        <p>A structured Excel dashboard for tracking student academic performance, using formulas, conditional formatting, and pivot tables to turn raw data into actionable insight.</p>
+        <div class="tags">
+          <span>MS Excel</span><span>Pivot Tables</span><span>Data Reporting</span>
+        </div>
+        <div class="project-card__links">
+          <a href="https://github.com/mashar345" target="_blank" rel="noopener">Repository →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__tag">python</span>
+          <span class="project-card__status">ongoing</span>
+        </div>
+        <h3>Automation &amp; Scripting Scripts</h3>
+        <p>A collection of small Python scripts automating repetitive tasks and improving workflow efficiency — including tools debugged and optimized for peers and classmates.</p>
+        <div class="tags">
+          <span>Python</span><span>Automation</span><span>Scripting</span>
+        </div>
+        <div class="project-card__links">
+          <a href="https://github.com/mashar345" target="_blank" rel="noopener">Repository →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== Experience & Education ===== -->
+  <section class="section" id="experience">
+    <div class="section__head">
+      <span class="section__cmd">$ history --all</span>
+      <h2 class="section__title">Experience &amp; Education</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__content">
+          <span class="timeline__date">2026 — Present</span>
+          <h3>Private Tutor · Self-Employed</h3>
+          <p>Teaching secondary-level students in Mathematics, Physics, Chemistry, and Computer Science. Simplifying complex concepts to improve understanding and exam performance, and developing customized study materials.</p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__content">
+          <span class="timeline__date">2025 — 2028</span>
+          <h3>BS Cyber Security · SSUET</h3>
+          <p>In progress. Coursework spanning network security, ethical hacking, risk management, computer organization &amp; architecture, and discrete mathematics.</p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__content">
+          <span class="timeline__date">2024</span>
+          <h3>Intermediate Science (Pre-Engineering)</h3>
+          <p>Adamjee Government Science College, Karachi.</p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__content">
+          <span class="timeline__date">2022</span>
+          <h3>Matriculation (Science)</h3>
+          <p>Board of Secondary Education, Karachi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Certifications ===== -->
+  <section class="section" id="certifications">
+    <div class="section__head">
+      <span class="section__cmd">$ cat certifications.log</span>
+      <h2 class="section__title">Certifications &amp; Courses</h2>
+    </div>
+    <div class="certs__grid">
+      <div class="cert-card">
+        <h3>Cyber Security Self Defense</h3>
+        <p>AI in Ethical Hacking — Webinar, Trion Institute</p>
+      </div>
+      <div class="cert-card">
+        <h3>UX/UI Figma for Beginners</h3>
+        <p>Webinar, Trion Institute</p>
+      </div>
+      <div class="cert-card">
+        <h3>Social Media Marketing</h3>
+        <p>Webinar, Trion Institute</p>
+      </div>
+      <div class="cert-card">
+        <h3>Digital Marketing Course</h3>
+        <p>Youth Evolution Foundation — YEF Digital Boost Camp</p>
+      </div>
+      <div class="cert-card">
+        <h3>E-Commerce Course</h3>
+        <p>Youth Evolution Foundation — YEF Digital Boost Camp</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section section--contact" id="contact">
+    <div class="section__head">
+      <span class="section__cmd">$ ./connect.sh --with=ashar</span>
+      <h2 class="section__title">Let's talk</h2>
+    </div>
+    <div class="contact__grid">
+      <p class="contact__text">
+        Open to internships, security research, and collaborative projects. The fastest way to reach me is email —
+        I usually reply within a day.
+      </p>
+      <div class="contact__cards">
+        <a class="contact-card" href="mailto:mashar7125@gmail.com">
+          <span class="contact-card__label">Email</span>
+          <span class="contact-card__value">mashar7125@gmail.com</span>
+        </a>
+        <a class="contact-card" href="tel:03190473960">
+          <span class="contact-card__label">Phone</span>
+          <span class="contact-card__value">0319-0473960</span>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/muhammad-ashar-b32191300" target="_blank" rel="noopener">
+          <span class="contact-card__label">LinkedIn</span>
+          <span class="contact-card__value">/in/muhammad-ashar-b32191300</span>
+        </a>
+        <a class="contact-card" href="https://github.com/mashar345" target="_blank" rel="noopener">
+          <span class="contact-card__label">GitHub</span>
+          <span class="contact-card__value">@mashar345</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Muhammad Ashar. Built with HTML, CSS &amp; JavaScript.</p>
+  <a href="#top" class="footer__top">back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
